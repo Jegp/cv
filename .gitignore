@@ -2,3 +2,5 @@
 *.pdf
 *.log
 *.swp
+*.fdb_latexmk
+*.fls
