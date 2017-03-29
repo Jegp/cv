@@ -5,17 +5,55 @@
 \usepackage{amssymb}
 \usepackage{tabularx}
 
-\usepackage{titling}
-\setlength{\droptitle}{-10em} 
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
 
-\author{Jens Egholm Pedersen, born 1988 
-\\ \texttt{jens.egholm@cern.ch}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{titling}
+\setlength{\droptitle}{-10em}
+\cfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+\author{Jens Egholm Pedersen, born 1988
+\\ \texttt{jensegholm@protonmail.com}
 }
+
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+
 \title{Curriculum Vitae}
 \begin{document}
 \maketitle
+
+\section*{Employments}
+\begin{tabularx}{\textwidth}{l X}
+2016 -      & CEO and co-founder, Selftie Software IVS \\
+            & Selftie Software is a Cogenhagen-based startup focused on personalising
+Computer-Aided Design (CAD). As a CEO the focus revolves around establishing a
+sustainable business model, while using the technical background to disrupt
+the software currently on the market.\\
+2016 -      & Assistant Professor, Copenhagen Business Academy \\
+            & Teaches modern computer science practices and industry standards.
+The area of work focuses on core programming principles, combined with
+state-of-the-art tools and languages. \\
+2014 - 2016 & Software engineer at CERN. \\
+            & Driving the development and maintenance of
+a monitoring toolchain for the accelerator control system complex.
+Was extended to work on a testbed for the Large Hadron Collider (LHC)
+accelerator, with an emphasis on real-time critical systems architecture and
+programming in Java.\\
+2013 - 2013 & Teaching assistant in a course on Mobile and Distributed Computing, IT-University of Copenhagen. \\
+2012 - 2013 & Student programmer at the DemTech research group. \\
+2011 - 2013 & Student ambassador for the IT-University of Copenhagen.
+\end{tabularx}
+
 \section*{Education}
 \begin{tabularx}{\textwidth}{l X}
+  2016 - & Student, MSc IT \& Cognition, Copenhagen University, Denmark \\
 2013 - 2013 & ERASMUS exchange programme, spring semester 2013, \\
             & Ècole d'Ingenieurs en Informatique, EPITA Paris, France. \\
 2011 - 2015 & BSc. in software development, IT-University of Copenhagen, Denmark. \\
@@ -23,33 +61,37 @@
 2004 - 2007 & High school, Esbjerg Gymnasium \& HF, Denmark.
 \end{tabularx}
 
-\section*{Employments}
-\begin{tabularx}{\textwidth}{l X}
-2014 - 2015 & Software engineer at CERN. \\
-            & At CERN I have been driving the development and maintenance of a database 
-of controls data and machine logs, based on Elasticsearch and Kibana, with a transport layer based on SYSLOG, TCP and JMS.
-I worked mainly in Java 8 but have installed, maintained and monitored the data cluster on several linux hosts. \\
-            & Second, I have been involved in the creation of a testbed in Java for one of the central control systems
-for the LHC accelerator. As a part of this project I wrote my bachelor thesis on predictable real-time guarantees in the JVM. \\
-2013 - 2013 & Teaching assistant in a course on Mobile and Distributed Computing, IT-University of Copenhagen. \\
-2012 - 2013 & Student programmer at the DemTech research group. \\
-2011 - 2013 & Student ambassador for the IT-University of Copenhagen.
-\end{tabularx}
-
 \section*{Volunteer work}
 \begin{tabularx}{\textwidth}{l X}
 2014 - 2016 & Tour guide for visitors around the CERN complex. \\
+2011 - 2014 & Active in the political student union at the IT University of Copenhagen. \\
 2011 - 2011 & Project lead, Ignition-Point entertainment. \\
 2010 - 2011 & Leading sound engineer, Ignition-Point entertainment. \\
 2010 - 2011 & Employee at the study café Lektier-Online, State and University  Library of Aarhus.  \\
-2008 - Current & Co-creator and lead programmer of the collaborative drawing-tool RepoCad (\texttt{http://repocad.com/}).
-%2006 - 2007 & Member of the board of the Danish High School Association (DGS). \\
-%2005 - 2007 & Chairman of the student council, Esbjerg Gymnasium \& HF. \\
+2008 - 2015 & Co-creator and lead programmer of the collaborative drawing-tool
+              RepoCad (\texttt{http://repocad.com/}), now managed by Selftie Software IVS. \\
+2006 - 2007 & Member of the board of the Danish High School Association (DGS). \\
+2005 - 2007 & Chairman of the highschool student council, Esbjerg Gymnasium \& HF.
 \end{tabularx}
 
 \section*{Papers}
 \textit{Introducing RepoCad  - A prototype of the Internet of Digital Design}, eCAADe 33, Vienna 2015. \\
 \textit{Predictable firm real-time Java}. Bachelor thesis, IT-University of Copenhagen, 2015. \\
 \textit{Proxy voting in the European Union}. Bachelor thesis, Aarhus University, 2011.
+
+\section*{Passions}
+Cognitive science and philosophy of the mind. I have a personal goal to augment
+my cognitive capacities to better encompass the challenges (and solutions) of tomorrow.
+\vskip4pt
+\noindent
+Volunteer work. I believe in a strong social responsibility for the immediate community and society as a whole.
+\vskip4pt
+\noindent
+Music. I have been playing the violin since age 6.
+\vskip4pt
+\noindent
+Hiking. Primarily in the Alps, Norway and Sweden.
+\vskip4pt
+\noindent
 
 \end{document}
