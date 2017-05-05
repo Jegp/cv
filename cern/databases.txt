@@ -1,0 +1,10 @@
+MySQL:
+Wrote a reservation system for flight seats with emphasis on concurrency issues for a university project.
+Created databases for a university course for managing movies, actors, instructors and their relations with a heavy focus on normal forms.
+Setting up and maintaining several MySQL databases for a number of organisations and freelance projects, such as the website of the student union at the IT-University of Copenhagen and a website on sustainable fashion.
+
+PostgreSQL:
+Created and maintained a large database of drawings, actions, users and meta-data for a large CAD application. The database and its design was especially challenging because of the need for concurrent transactions, versioning, collision handling and robustness requirements.
+
+NoSQL:
+Implemented a map in vector graphics for a smaller organisation, where the map data was stored in a single schema as JSON.

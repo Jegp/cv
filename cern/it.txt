@@ -1,0 +1,25 @@
+Building web applications
+Wrote a website for a large CAD application using HTML5 and Google's AngularJS framework.
+Wrote a client to render map-data using HTML5 and XPath for a university project.
+Used jQuery to present, design and animate content in the Trac issue tracking/wiki system for DemTech.
+
+Using web application frameworks
+Worked with the Google Web Toolkit as a teaching assitant to develop multiple clients and servers. They were deployed using GWT.
+Wrote a backend for a large CAD application using a Scala based framework called Spray.
+Implemented website prototypes for a large CAD application in the Scala Lift framework and Play.
+
+Distributed computing
+Wrote a medium-sized application for unobtrusively synchronising files on the Windows platform for a university project.
+Wrote a system for distributing computational tasks using UDP and TCP.
+Developed a concurrent framework for a large CAD application before. The system had several asynchronous operations performed by scaleable clusters.
+
+Software development tools
+Daily using Git for versioning my private and professional work (including this application).
+Used GitHub's issues for a large CAD application.
+Setup and managed a Jenkins server for a large CAD application.
+Experience with the tracking system of Trac from my work in DemTech.
+
+System administration
+Administering a Ubuntu instance with back-up mechanisms and many users, servers and services for DemTech.
+Administering up to 7 Debian instances for the large CAD application.
+Privately run Windows, FreeBSD, Ubuntu and Debian Linux.

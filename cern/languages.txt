@@ -1,0 +1,32 @@
+C:
+A program to transfer and process data from a MIPS-based router for use in analysing queues at polling stations at danish elections. Developed for the DemTech group.
+Implemented generational garbage collection in a C-like language compiled using F# for a university project.
+
+C++:
+Contributed as a programmer to a Steam-distributed space-simulator called Eternal Silence for a company called Crankshaft.
+Wrote several adversarial search algorithms for a course on intelligent systems.
+Used the Mozilla Emscripten/ASM engine to render C++ code in HTML5 for smaller games (sudoku, 8-puzzle) for private purposes.
+
+Java:
+Wrote a a large roadmap with semi-intelligent graph search algoritms for a university project.
+Was head of development for a large CAD system written in the JVM based language, Scala. Developed continuously over five years.
+Implemented a game of connect-four using adversarial search and a game of n-queens for a course on intelligent systems.
+
+C#:
+Assisted in configuration and setup of voting systems and protocols at DemTech.
+Wrote a medium-sized client and server to synchronise files across multiple clients.
+
+Python:
+Installed, customised and maintained a Trac server with LDAP authentication for DemTech.
+Regularly using Python for daily routines such as serving files and computing hashes.
+
+Shell:
+Wrote a number of deploy scripts for the CAD project above.
+Scripted configuration and logging mechanisms for MIPS routers.
+Using shell script on a daily basis to administer systems mentioned below.
+Gained experience with several shell dialects, such as ash on BusyBox systems at DemTech and Z shell on my own machine.
+
+F# and Haskell:
+Used F# to write several lexers, parsers and compilers for a university project.
+Used Haskell to parse data from the MIPS routers for DemTech.
+Studied functional programming in several courses with a focus on F# and Haskell.
