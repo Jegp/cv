@@ -1,8 +1,0 @@
-Autonomous and intelligent systems
-I am currently spending a lot of time on systems where software 'adapts' to certain circumstances. This ranges from the artificial intelligence field to data-mining, neural networks and search problems. I have studied intelligent systems where many of these topics are covered. My experience in implementing several of these technologies will be mentioned throughout the rest of the application, but I hope to gain more experience on the topic at CERN.
-
-Critical systems
-I am drawn to the idea of using mathematics to model and verify exactly what systems should - and should not - do. Apart from private studies on the topic I have been following the research done by the DemTech research group to verify voting systems and protocols. As with the previous topic, I hope to be able to explore and apply this subject in my work at CERN.
-
-Monitoring and analysis tools
-Of the projects I have selected below I am particularly keen on the project for analysis of the transport infrastructure called 'Monitoring and Analytics Tools'. I have studied database design, distributed systems and operating systems at the IT-University of Copenhagen, and covered the requirements for the project.

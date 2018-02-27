@@ -3,36 +3,99 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{tabularx}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+
+\usepackage{geometry}
+\newgeometry{margin=2cm}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\usepackage{titling}
+\setlength{\droptitle}{-5em}
+\cfoot{Side \thepage \hspace{1pt} af \pageref{LastPage}}
 \usepackage[danish]{babel}
-\author{Jens Egholm Pedersen, født 1988 
-\\ \texttt{jegp@itu.dk}
+\author{Jens Egholm Pedersen, født 1988
+\\ \texttt{jensegholm@protonmail.com}
 }
+
+\makeatletter
+\let\ps@plain\ps@fancy
+\makeatother
+
 \title{Curriculum Vitae}
 \begin{document}
 \maketitle
+
 \section*{Uddannelse}
-\begin{tabular}{l l }
-2013 - 2013 & ERASMUS udvekslingsprogram, forårssemester 2013, \\
-            & Ècole d'Ingenieurs en Informatique, EPITA, Paris. \\
-2011 - 2014 (forventet) & BSc. i softwareudvikling, IT-Universitetet i København. \\
-2008 - 2011 & BSc. i statskundsskab, Aarhus Universitet. \\
-2004 - 2007 & Gymnasium, Esbjerg Gymnasium \& HF.
-\end{tabular}
+\begin{tabularx}{\textwidth}{l X}
+2016 - 2018 & Stud. MSc. IT \& Cognition, Københavns Universitet \\
+2014 - 2014 & Kursusforløb i acceleratorfysik ved CERN (\texttt{AXEL-2015}) \\
+2013 - 2013 & ERASMUS udvekslingsprogram 2013,
+              Ècole d'Ingenieurs en Informatique, EPITA, Paris \\
+2011 - 2014 & BSc. softwareudvikling, IT-Universitetet i København \\
+2008 - 2011 & BSc. statskundskab, Aarhus Universitet \\
+2004 - 2007 & Gymnasium, Esbjerg Gymnasium \& HF
+\end{tabularx}
 
 \section*{Ansættelser}
-\begin{tabular}{l l }
-2012 - 2012 & Studenterprogrammør for forskningsgruppen DemTech \\ & (\texttt{www.demtech.dk}). \\
-2011 - 2013 & Ambassadør for IT-Universitetet i Copenhagen.
-\end{tabular}
+\begin{tabularx}{\textwidth}{l X}
+2016 -      & \textbf{Adjunkt ved Copenhagen Business Academy} \\
+            & Jeg har afviklet undervissforløb i tråd- og webprogrammering,
+              funktionel programmering, relationelle databaser, machine learning
+              samt design og drift af store systemer. Sammen med mine kolleger
+              har vi udviklet nyt læringsmateriale i samtlige undervisningsforløb.
+              Undervisningsen har kombineret traditionel teori med
+              moderne praksis, og jeg har modtaget stor ros både
+              for det faglige indhold og min personlige undervisningsstil.\\
+            & En anbefaling kan sendes efter forespørgsel. \\
+2016 -      & \textbf{CTO og medstifter, Mobilized Construction} \\
+            & Som CTO har
+              jeg designet og implementeret de digitale løsninger, der ligger til
+              grund for firmaets videre vækst. Derudover har jeg det ledet hold af
+              softwareudviklere fordelt i Kenya, Canada, USA og Wales. \\
+2014 - 2016 & \textbf{Software ingeniør ved CERN} \\
+            & Hos CERN udviklede og drev jeg overvågningsinfrastruktur for
+              de kontrolsystemer, der driver CERNs acceleratorkompleks.
+              Derudover var jeg involveret i udviklingen af testprotokoller for
+              deres største accelerator (LHC), samt en prototype af et nyt
+              real-time kontrolsystem i Java. \\
+            & En anbefaling kan sendes efter forespørgsel. \\
+2013 - 2013 & \textbf{Instruktor i kurset \textit{mobile og distribuerede systemer} ved ITU} \\
+            & Her forelæste jeg i principper og forskning omkring mobile og
+              distribuerede IT systemer, bidrog til at udvikle nyt
+              undervisningsmateriale samt overså øvelsestimer. \\
+2012 - 2014 & \textbf{Studenterprogrammør for forskningsgruppen DemTech (\texttt{demtech.dk})} \\
+            & Her udviklede jeg et system bygget på 3G routere til at måle
+              kølængder under kommunalvalget i 2013. Systemet blev rullet up på
+              fem valgsteder. \\
+2011 - 2013 & \textbf{Ambassadør for IT-Universitetet i Copenhagen} \\
+            & Her underviste i basale programmeringsprincipper og afholdt
+              workshops for kommende ITU studerende.
+\end{tabularx}
 
 \section*{Frivilligt arbejde}
-\begin{tabular}{l l }
-2011 - 2011 & Projektleder, Ignition-Point Entertainment. \\
-2010 - 2011 & Ledende lydingeniør, Ignition-Point Entertainment. \\
-2010 - 2011 & Ansat lektiehjælper hos Lektier-Online, Statsbibliotektet i Aarhus. \\ & Anbefaling kan sendes efter forespørgsel. \\
-2008 - Nu & Medstifter og programmør af et kollaborativt tegnings-værktøj, Siigna \\ & (\texttt{www.github.com/siigna}). \\
-2006 - 2007 & Bestyrelsesmedlem ved Danske Gymnasieelevers Sammenslutning (DGS). \\
-2005 - 2007 & Elevrådsformand ved Esbjerg Gymnasium \& HF. \\
-\end{tabular}
+\begin{tabularx}{\textwidth}{l X}
+2014 - 2016 & \textbf{Guide og forelæser for besøgende til CERN} \\
+            & Som guide blev jeg instrueret i forskellige dele af CERNs
+              kontrolinfrastruktur samt de teoretiske principper bag. Jeg
+              viste besøgende fra højere uddannelsesinstitutioner rundt i CERNs
+              kontrolcenter, kryogene faciliteter samt præsenterede
+              grundlæggende partikelfysik for dansker gymnasieklasser. \\
+2011 - 2014 & \textbf{Aktiv hos den studenterpolitiske forening (StupIT) ved ITU} \\
+            & Som medlem af StupIT var jeg med til at grundlægge en støttepulje
+              til andre foreniger på ITU, samt grundlægge deres vedtægter. \\
+2010 - 2011 & \textbf{Lektiehjælper hos Lektier-Online, Statsbibliotektet i Aarhus} \\
+            & Som lektiehjælper hjalp jeg gymnasieelever over hele Danmark i
+              matematik, dansk og samfundsfag. Sammen med ledelsen præsenterede
+              jeg projektet for den daværende minister for integration og kirke. \\
+2006 - 2007 & \textbf{Bestyrelsesmedlem ved Danske Gymnasieelevers Sammenslutning} \\
+2005 - 2007 & \textbf{Elevrådsformand ved Esbjerg Gymnasium \& HF} \\
+\end{tabularx}
 
 \end{document}
