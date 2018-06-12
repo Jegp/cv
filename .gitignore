@@ -4,3 +4,4 @@
 *.swp
 *.fdb_latexmk
 *.fls
+*.synctex.*
