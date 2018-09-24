@@ -1,100 +1,218 @@
-\documentclass[12pt,a4paper,notitlepage]{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{tabularx}
 
-\usepackage{fancyhdr}
-\usepackage{lastpage}
-\pagestyle{fancy}
-\fancyhf{}
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
 
-\usepackage{geometry}
-\newgeometry{margin=2cm}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
 
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec} 
 
-\usepackage{titling}
-\setlength{\droptitle}{-8em}
-\cfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
 
-\author{Jens Egholm Pedersen, born 1988
-\\ \texttt{jensegholm@protonmail.com}
-}
+% COMMENTS
+\usepackage{verbatim}
 
-\makeatletter
-\let\ps@plain\ps@fancy
-\makeatother
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
 
-\title{Curriculum Vitae}
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Albert Einstein - vita},
+	pdfauthor={My name},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
 \begin{document}
-\maketitle
+
+{\LARGE Jens Egholm Pedersen}\\[1cm]
+  Unit for Cognitive Neuroscience\\
+  University of Copenhagen\\[0.2cm]
+  Øster Farimagsgade 2A\\
+  1353 Copenhagen K, Denmark\\[.2cm]
+Phone: \texttt{+45 25122752}\\
+Email: \href{mailto:jensegholm@protonmail.com}{jensegholm@protonmail.com}\\
+
+\vfill 
+Born: 8. August 1988---Varde, Denmark\\
+Nationality: Danish
+
+\section*{Current position}
+\emph{External lecturer}, IT-University of Copenhagen, Denmark
 
 \section*{Education}
-\begin{tabularx}{\textwidth}{l X}
-2016 - 2018 & Student, MSc IT \& Cognition, Copenhagen University, Denmark \\
-            & \footnotesize Graduation 23rd of October 2018 \\
-2014 - 2014 & Technical training on particle accelerator physics \\
-2013 - 2013 & ERASMUS exchange programme, spring semester 2013, \\
-            & Ècole d'Ingenieurs en Informatique, EPITA Paris, France \\
-2011 - 2015 & BSc. in software development, IT-University of Copenhagen, Denmark \\
-2008 - 2011 & BSc. in political science, Aarhus University, Denmark
-\end{tabularx}
+\noindent
+\subsection*{University}
+\years{2018}\textbf{MSc in Computer Science}, University of Copenhagen\\
+\emph{Advisors: Martin Elsman and Jesper Mogensen}\\
+\years{2015}\textbf{BSc in Computer Science}, IT-University of Copenhagen\\
+\emph{Advisor: Peter Sestoft (IT-University of Copenhagen), Vito Baggiolini
+(CERN)}\\
+\years{2011}\textbf{BSc in Political Science}, University of Aarhus\\
+\emph{Advisor: Tore V. Olsen}
 
-\section*{Employments}
-\begin{tabularx}{\textwidth}{l X}
-2018 -      & \textbf{External lecturer, IT-University of Copenhagen} \\
-            & Planned and executed a qualification seminar for master's students,
-              beginning August 2018. \\
-2016 - 2018 & \textbf{Assistant professor, Copenhagen Business Academy}\footnotemark[1] \\
-            & As an assistant professor I developed materials and lectured in
-              a range of topics, including functional programming,
-              machine learning and design and operation of large systems.
-              I received high praise for the professional content as well as
-              my communication and pedagogical skills.\\
-2016 - 2018 & \textbf{CTO and co-founder, Mobilized Construction}\footnotemark[1] \\
-            & As a CTO I have designed, implemented and maintained the
-              digital foundation for the company's continued growth.
-              I have supervised and led development teams in Kenya, Canada, USA and Wales.\\
-2014 - 2016 & \textbf{Software engineer, CERN}\footnotemark[1] \\
-            & At CERN I was driving the development and maintenance of
-              a monitoring toolchain for the accelerator control system complex.
-              My contract was extended to work on a testbed for the Large Hadron
-              Collider (LHC) accelerator, with an emphasis on real-time critical
-              systems architecture in Java. \\
-2013 - 2013 & \textbf{Instructor in the course \textit{mobile and distributed systemes}, IT-University of Copenhagen} \\
-            & I lectured on principles and research on mobile and distributed
-              systems and participated in the development of new teaching
-              materials. \\
-2012 - 2014 & \textbf{Student programmer, DemTech research group (\texttt{demtech.dk})}\footnotemark[1] \\
-            & As a student programmer I developed a 3G based router system to
-              measure the length of election queues. Used for nation-wide
-              research and deployed at several polling places in 2013.
-\end{tabularx}
+\subsection*{Training}
+\noindent
+\years{2018}HBP School: ``The Brain Simulation Platform of the Human Brain
+Project'' --- \emph{Palermo, Italy}\\
+\years{2018}2\textsuperscript{nd} HBP Student Conference: ``Transdiscilinary
+Research Linking Neuroscience, Brain Medicine and Computer Science'' ---
+\emph{Ljubljana, Slovenia}\\
+\years{2017}2\textsuperscript{nd} Young Researchers Event, Human Brain Project ---
+\emph{Geneva, Switzerland}\\
+\years{2014}AXEL course on particle accelerator physics, CERN
 
-\footnotetext[1]{A letter of recommendation can be sent per request.}
+\subsection*{Languages}
+\emph{Danish} (C2, native)\\
+\emph{English} (C2, fully proficient)\\
+\emph{French} (B1, working basic conversational) \\
+\emph{German} (A2, basic)
 
-\section*{Volunteer work}
-\begin{tabularx}{\textwidth}{l X}
-2018 -      & Lead developer and maintainer of Volr, a Haskell-based environment
-              for the construction, evaluation and analysis of neural networks
-              (\texttt{https://github.com/volr/}). \\
-2014 - 2016 & Tour guide for visitors around the CERN complex \\
-            & As a guide I was introduced to the different parts of the
-              control system in the accelerator complex, the cryogenics
-              facilities and particle physics. I held presentations
-              on all of the above for visitors from all around the globe. \\
-2011 - 2014 & Active in the political student union at the IT University of Copenhagen. \\
-2008 - 2015 & Co-creator and lead programmer of the collaborative drawing-tool
-              RepoCad, now published as open-source (\texttt{https://github.com/selftiesoftware}).
-\end{tabularx}
+\section*{Appointments held}
+\noindent
+\years{2018-}\textbf{External lecturer}, IT-University of Copenhagen, Denmark\\
+At ITU I plan and teach a seminar on programming, programming tools and large-scale
+visualisation techniques \\[0.5cm]
+\years{2016-2018}\textbf{Chief Technology Officer}, Mobilized Construction, Kenya\\
+At Mobilized Construction I built the infrastructure required for their
+large-scale operations, but are now focusing on a managerial role to
+the teams in Wales and Kenya. I have supervised several student projects
+on machine learning and data science from the University of Southern
+California.\\[0.5cm]
+\years{2016-2018}\textbf{Assistant professor}, Copenhagen Business Academy,
+Denmark\\
+As an assistant professor I developed materials and lectured in
+a range of topics, including functional programming,
+machine learning and design and operation of large systems.
+I received high praise for the professional content as well as
+my communication and pedagogical skills.\\[0.5cm]
+\years{2014-2016}\textbf{Software engineer}, CERN, Switzerland\\
+At CERN I was driving the development and maintenance of
+a monitoring toolchain for the accelerator control system complex.
+My contract was extended to work on a testbed for the Large Hadron
+Collider (LHC) accelerator, with an emphasis on real-time critical
+systems architecture in Java. \\[0.5cm]
+\years{2013}\textbf{Instructor}, Mobile and Distributed Systems, IT-University of
+Copenhagen, Denmark\\
+I lectured on principles and research on mobile and distributed
+systems and participated in the development of new teaching
+materials. \\[0.5cm]
+\years{2012-2014}\textbf{Research assistant}, DemTech research group, Denmark\\
+As a student programmer I developed a 3G based router system to
+measure the length of election queues. Used for nation-wide
+research and deployed at several polling places in the Danish national
+election of 2013.
 
-\section*{Papers}
-\textit{Introducing RepoCad  - A prototype of the Internet of Digital Design}, eCAADe 33, Vienna 2015. \\
-\textit{Predictable firm real-time Java}. Bachelor thesis, CERN and IT-University of Copenhagen, 2015. \\
-\textit{Proxy voting in the European Union}. Bachelor thesis, Aarhus University, 2011.
+\section*{Honours \& awards}
+\noindent
+\years{2017}Finalist, Founders of Tomorrow
+(\href{https://foundersoftomorrow.com}{FoundersOfTomorrow.com})\\
+\years{2013}ERASMUS exchange programme, Ècole d'Ingenieurs en Informatique, Paris, France\\
+
+\pagebreak
+
+\section*{Publications and talks}
+\noindent
+
+\subsection*{Journal articles}
+\years{2018}\textbf{Understanding the neurocognitive organization as strategies rather
+than functions: Implications for neurological research}\\
+Mogensen, J., Dauggaard, N., Kitsios, S., Pedersen, J. E., Overgaard, M.
+\emph{EC Neurology}
+
+\subsection*{Peer-reviewed conference papers}
+\years{2015}\textbf{Introducing RepoCad - A prototype of the Internet of Digital
+Design}\\
+Jackson, O. E. and Pedersen, J. E.\\
+\emph{eCAADe}, Volume 33
+
+\subsection*{Peer-reviewed conference abstracts}
+\years{2018}\textbf{Volr: A declarative interface language for neural
+computation} --- \href{https://indico-jsc.fz-juelich.de/event/71/}{NEST
+conference} abstract, poster\\
+Pedersen, J. E. and Pehle, Christian,\\
+\emph{NEST conference: A Forum for Users and Developers}
+
+\subsection*{Theses and dissertations}
+\years{2018}\textbf{Modelling neural learning systems --- Cognitive models in third
+generation neural networks}\\
+\emph{Master's thesis, University of Copenhagen}\\[0.4cm]
+\years{2015}\textbf{Predictable firm real-time Java}\\
+\emph{Bachelor's Dissertation, CERN and IT-University of Copenhagen}\\[0.4cm]
+\years{2011}\textbf{Proxy voting in the European Union}\\
+\emph{Bachelor's thesis, Aarhus University}
+
+\subsection*{Conference presentations}
+\years{2018}\textbf{Experimental neural systems modelling with Jupyter
+Notebooks} ---
+\emph{HBP School} \\
+Pedersen, J. E. \\[0.4cm]
+\years{2018}\textbf{Volr: A declarative interface language for neural
+computation}
+--- \emph{NEST conference}\\
+Pedersen, J. E. and Pehle, C. 
+
+\section*{Voluntary work}
+\noindent
+\years{2018}Lead developer and maintainer of Volr, a Haskell-based environment
+for the construction, evaluation and analysis of neural networks
+(\href{https://github.com/volr/}{github.com/volr}). \\
+\years{2014-2016} Tour guide for visitors around the CERN complex, where
+I was introduced to the different parts of the
+control system in the accelerator complex, the cryogenics
+facilities and particle physics. I held presentations
+on all of the above for visitors from all around the globe. \\
+\years{2008-2015}Co-creator and lead programmer of the collaborative drawing-tool
+epoCad, now published as open-source
+(\href{https://github.com/selftiesoftware}{github.com/selftiesoftware}).
 
 %\section*{Passions}
 %Cognitive science and philosophy of the mind. Has a personal goal to augment
