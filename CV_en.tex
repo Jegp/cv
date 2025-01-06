@@ -52,6 +52,7 @@
 \setlength{\marginparsep}{7pt}
 \reversemarginpar
 
+\usepackage[symbol]{footmisc}
 
 % HEADINGS
 \usepackage{sectsty} 
@@ -61,7 +62,7 @@
 \subsubsectionfont{\mdseries\upshape\large} 
 
 \usepackage{titlesec}
-\titlespacing*{\section} {0pt}{2.5ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+\titlespacing*{\section} {0pt}{3ex plus 1ex minus .2ex}{1.3ex plus .2ex}
 \titlespacing*{\subsection} {0pt}{2.25ex plus 1ex minus .2ex}{0.5ex plus .2ex}
 
 % PDF SETUP
@@ -72,25 +73,20 @@ bookmarks, colorlinks, breaklinks,
 	pdfproducer={https://jepedersen.dk}
 ]{hyperref}  
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
-
 \begin{document}
 
-{\LARGE Jens Egholm Pedersen}\\[.4cm]
-\begin{tabular}{@{}l l l}
-      Contact: & \href{mailto:jeped@kth.se}{jeped@kth.se}                  \\
-      Website: & \href{https://jepedersen.dk}{jepedersen.dk}\hspace{1.6cm}
-      Mastodon: \href{https://mastodon.social/@jegp}{@jegp}\hspace{1.6cm}
-      GitHub: \href{https://github.com/jegp/}{@jegp}
-\end{tabular}
+{\LARGE Jens Egholm Pedersen} \hspace{1cm} {\large Born: 1988, Denmark}\\[.4cm]
+Contact: \href{mailto:jeped@kth.se}{jeped@kth.se}\hspace{1.2cm}
+Website: \href{https://jepedersen.dk}{jepedersen.dk}\hspace{1.2cm}
+GitHub: \href{https://github.com/jegp/}{@jegp}\hspace{1.2cm}
 
 
 \section*{Education}
-\years{2019-2024 (est.)}\textbf{PhD in Computer Science}, KTH Royal Institute of Technology, Sweden \\
+\years{2019-2025 (est.)}\textbf{PhD in Computer Science}, KTH Royal Institute of Technology, Sweden \\
 Thesis: \textbf{Neuromorphic computing in space and time}.\\
 Advisors:
 \href{https://www.kth.se/profile/conr}{Jörg Conradt} (KTH) and
 \href{https://www.kth.se/profile/arvindku}{Arvind Kumar} (KTH, Karolinska Institute) \\
-Courses: Machine learning, Computational Neuroscience, Computer vision, Mathematics, Philosophy of Science, Supervision, Communication, and Teaching \\
 \years{2016-2019}\textbf{MSc in IT} \& \textbf{Cognition}, University of Copenhagen\\
 Thesis: Modelling learning systems in spiking and artificial neural networks.\
 \\
@@ -100,24 +96,22 @@ Thesis: Predictable firm real-time Java. In collaboration with CERN.
 \years{2009-2011}\textbf{BSc in Political Science}, University of Aarhus, Denmark\\
 Thesis: Proxy voting in the European Union.
 
-\section*{Peer-reviewed publications}
-\noindent
-
-\years{2024}\textbf{J. E. Pedersen}*, S. Abreau *, J. Eshraghian, et al. (* equal authorship) ``The Neuromorphic Intermediate Representation''.
-\emph{Nature Communications}. \\
-\years{2024}\textbf{J. E. Pedersen}, J. Conradt, \& T. Lindeberg. ``Covariant spatio-temporal receptive fields for neuromorphic computing''. \emph{In review}. \\
-\years{2024} S. Abreau*, \textbf{J. E. Pedersen}*, K. Heckel*, \& A. Pierro (* equal authorship). ``Q-S5: Towards Quantized State Space Models.''
-\href{https://icml.cc/virtual/2024/workshop/29962}{ICML - Next Generation of Sequence Modeling Architectures}. \\
+\section*{Peer-reviewed publications {\small (* indicates equal authorship)}}
+\years{2025}\textbf{J. E. Pedersen}, J. Conradt, \& T. Lindeberg. ``Covariant spatio-temporal receptive fields for neuromorphic computing''. \emph{In review}. \\
+\years{2024}\textbf{J. E. Pedersen}*, S. Abreau*, J. Eshraghian, et al. ``The Neuromorphic Intermediate Representation''.
+\href{https://www.nature.com/ncomms/}{Nature Communications} [IF: 17.69]. \\
+\years{2024} S. Abreau*, \textbf{J. E. Pedersen}*, K. Heckel*, \& A. Pierro. ``Q-S5: Towards Quantized State Space Models.''
+\href{https://icml.cc/virtual/2024/workshop/29962}{ICML - Next Generation of Sequence Modeling Architectures} [Acceptance rate: 30.5\%]. \\
 \years{2024} S. Abreau, \textbf{J. E. Pedersen}.
 ``Neuromorphic Programming: Emerging Directions for Brain-Inspired Hardware''.
 \href{https://iconsneuromorphic.cc/}{International Conference on Neuromorphic Computing Systems}. \\
-\years{2024} A. Geminiani, J. Kathrein, ..., \textbf{J. E. Pedersen} et al. ``Multidisciplinary and collaborative training in neuroscience: Insights from the Human Brain Project Education Programme''. \textit{Neuroinformatics}. \\
+\years{2024} A. Geminiani, J. Kathrein, ..., \textbf{J. E. Pedersen} et al. ``Multidisciplinary and collaborative training in neuroscience: Insights from the Human Brain Project Education Programme''. \href{https://link.springer.com/journal/12021}{Neuroinformatics} [IF: 2.7]. \\
 \years{2023} \textbf{J. E. Pedersen}, R. Singhal, \& J. Conradt.
 ``Translation and Scale Invariance for Event-Based Object tracking''.
-\href{https://dl.acm.org/conference/nice}{NICE - Neuro Inspired Computational Elements Conference}. \\
+\href{https://niceworkshop.org/}{Neuro Inspired Computational Elements Conference (NICE)}. \\
 \years{2023} \textbf{J. E. Pedersen} \& J. Conradt.
 ``AEStream: Accelerated event-based processing with coroutines.''
-\href{https://dl.acm.org/conference/nice}{NICE - Neuro Inspired Computational Elements Conference}. \\
+\href{https://niceworkshop.org/}{Neuro Inspired Computational Elements Conference (NICE)}. \\
 \years{2023} J. P. Romero B., L. A. Plana, A. Rowley, M. Hessel, \textbf{J. E. Pedersen}, S. Furber, J. Conradt.
 ``A High-Throughput Low-Latency Interface Board for SpiNNaker-in-the-loop Real-Time Systems.''
 \href{https://icons.ornl.gov/}{ICONS - International Conference on Neuromorphic Systems}. \\
@@ -125,39 +119,26 @@ Thesis: Proxy voting in the European Union.
 ``Understanding the neurocognitive organization as strategies rather than functions: Implications for neurological research.''
 \emph{EC Neurology}.
 
-\section*{Open-access publications}
+\section*{Open-access publications {\small (* indicates equal authorship)}}
 \years{2024} \textbf{J. E. Pedersen}, R. Singhal, \& J. Conradt, ``Event dataset generation for Galilean and affine transformations''. \href{https://zenodo.org/records/11063678}{Zenodo}. \\
 \years{2022} \textbf{J. E. Pedersen}, J. P. Romero B. \& J. Conradt,
 ``Coordinate regression with Spiking Neural Networks.''
-Workshop on \href{https://neal2022.tetzlab.com/}{Neuromorphic Algorithms}, \\
+Workshop on \href{https://neal2022.tetzlab.com/}{Neuromorphic Algorithms}. \\
 \years{2022} J. Turner, \textbf{J. E. Pedersen}, J. Conradt, \& T Nowotny, ``Event-based dataset for classification and pose estimation.''
-\href{https://niceworkshop.org/}{NICE - Neuro Inspired Computational Elements Conference}. \\
-\years{2020} \textbf{J. E. Pedersen}*, C. Pehle*, (* shared authorship)
-``Norse - Spiking neural network for deep learning.''
-\href{https://zenodo.org/record/4422025}{Zenodo}
+\href{https://niceworkshop.org/}{Neuro Inspired Computational Elements Conference (NICE)}. \\
+\years{2020} \textbf{J. E. Pedersen}*, C. Pehle*, ``Norse - Spiking neural network for deep learning.''
+\href{https://zenodo.org/record/4422025}{Zenodo}.
 
 \section*{Honours, Grants \& awards}
 \years{2024}NSF AccelNet NeuroPAC Fellowship with Professor Sadasivan Shankar, Stanford University.\\
-\years{2022 - 2024}Compute grant for Swedish National Infrastructure for Computing \\
+\years{2022 - 2025}Compute grant for Swedish National Infrastructure for Computing \\
 \years{2018}Winner, \textbf{Edge of Government Award} for the startup Mobilized
 Construction, Prime Minister of the United Arab Emirates.\\
 \years{2017}Finalist, \textbf{Founders of Tomorrow} startup programme
-(\href{https://foundersoftomorrow.com}{FoundersOfTomorrow.com}). \\
-\years{2012}ERASMUS exchange programme to EPITA - Ecole d'ingénieurs en informatique, Paris.
+(\href{https://foundersoftomorrow.com}{FoundersOfTomorrow.com}).
 
 \section*{Select appointments held}
-\begin{comment}
-\noindent
-\years{2019-}\textbf{Doctoral student}, KTH Royal Institute of Technology,
-Stockholm, Sweden.\\
-Following the title of my thesis ``Neuromorphic control systems'', I work with
-sparse, event-driven, and massively parallel brain-inspired algorithms to
-understand and construct goal-oriented and autonomous control systems.\\
-\textit{Advisors}: \href{https://www.kth.se/profile/conr}{Jörg Conradt} and
-\href{https://www.kth.se/profile/arvindku}{Arvind Kumar}.
-\\
-\end{comment}
-\years{2018-2024}\textbf{External lecturer}, IT-University of Copenhagen, Denmark\\
+\years{2018-2025}\textbf{External lecturer}, IT-University of Copenhagen, Denmark\\
 I planned and taught courses on Python and data science with outstanding reviews. \\
 \years{2016-2019}\textbf{Adjunct professor}, Copenhagen Business Academy,
 Denmark\\
@@ -168,34 +149,42 @@ I designed a globally distributed software stack, managed teams in the US, Wales
 I developed and maintained a monitoring toolchain and testbed for the Large
 Hadron Collider.
 
-\section*{Talks}
-\years{2024}NIR: A unified instruction set for brain-inspired computing --- \emph{SNUFA - Spiking Neural networks as Universal Function Approximators \& separately at an Open Neuromorphic Workshop} \\
-\years{2023}AEStream: Accelerated event-based processing with coroutines --- \emph{Telluride Neuromophic Cognition Engineering Workshop}. \\
+
+\section*{Select talks}
+\years{2024}NIR: A unified instruction set for brain-inspired computing --- \href{https://sites.google.com/view/telluride-2024/}{Telluride Neuromorphic Cognition Engineering Workshop} and \href{http://snufa.net/}{Spiking Neural networks as Universal Function Approximators} \\
+\years{2023}AEStream: Accelerated event-based processing with coroutines --- \href{https://sites.google.com/view/telluride-2023/}{Telluride Neuromorphic Cognition Engineering Workshop}. \\
 \years{2023}Translation and Scale Invariance for Event-Based Object tracking ---
-\emph{NICE - Neuro Inspired Computational Elements Conference}. \\
+\href{https://niceworkshop.org/}{Neuro Inspired Computational Elements Conference (NICE)}. \\
 \years{2023}The need for neuromorphic abstractions ---
-\emph{Open Neuromorphic event on Neuromorphic open-source computing}. \\
-\years{2023}AEStream: Accelerated event-based processing with coroutines ---
-\emph{NICE - Neuro Inspired Computational Elements Conference}. \\
-\years{2021}Norse: A library for gradient-based learning in Spiking Neural Networks --- Workshop on \emph{SNUFA - Spiking Neural networks as Universal Function Approximators}.
+\href{https://open-neuromorphic.org/}{Open Neuromorphic workshop}. \\
+\years{2021}Norse: A library for gradient-based learning in Spiking Neural Networks --- Workshop on \href{http://snufa.net/}{Spiking Neural networks as Universal Function Approximators (SNUFA)}.
 
 \section*{Selected student projects}
-\years{2023}Oskar Strömberg, \emph{Event-based vision with spiking vision transformers}, KTH, MSc. \\
+\years{2024}Oskar Strömberg, \emph{Event-based vision with spiking vision transformers}, KTH, MSc. \\
 \years{2022}Philpp Mondorff, \emph{Spiking Reinforcement Learning for Robust Robot Control}, KTH, MSc.\\
 \years{2022}Merlin Sewina, \emph{Decoding EEG with Spiking and Artificial Neural Networks}, KTH, MSc.\\
 \years{2020}Mikkel Ziemer, \emph{Building CERN's Control System}, CPHBusiness, BSc.
 
 \section*{Contributions to the community}
-\noindent
-\years{2024}\textbf{Topic area co-organizer}: ``Neuromorphic systems for space applications''---\emph{Telluride Neuromorphic Cognition Engineering Workshop} \\
-\years{2024}\textbf{Conference committee member}---\emph{NICE - Neuro Inspired Computational Elements Conference} \\
-\years{2024}\textbf{Conference committee member}---\emph{ICONS - International Conference on Neuromorphic Systems} \\
-\years{2022}\textbf{Real-time neuromorphics with Norse and AEStream}---\emph{\href{https://jepedersen.dk/slides/202209_neurotech/index.html}{Neurotech Tutorial}} \\
-\years{2020-2023}\textbf{Conference committee member}---5th, 6th, and 7th Human Brain Project Student Conference on
-on Interdisciplinary Brain Research.\\
+I review for several neuromorphic venues, including the \href{https://iopscience.iop.org/journal/2634-4386}{Journal of Neuromorphic Computing and Engineering}, the \href{https://niceworkshop.org/}{Neuro Inspired Computational Elements Conference (NICE)}, and the \href{https://iconsneuromorphic.cc/}{International Conference on Neuromorphic Systems (ICONS)}.
+I have organized and led numerous events including at the \href{https://sites.google.com/view/telluride-2024/}{Telluride Neuromorphic Cognition Engineering Workshop} and \href{https://capocaccia.cc/en/}{CapoCaccia Workshop toward Neuromorphic Intelligence}.
+Finally, I am adamant in my support and maintenance of open-source efforts.
+I am an active part of the \emph{\href{https://open-neuromorphic.org/}{Neuromorphic Computing and Engineering Community}} and I am
+driving development of \href{https://github.com/aestream/faery}{Faery}, \href{https://github.com/aestream}{AEstream}, and \href{https://github.com/norse/}{Norse}.
+%\years{2024}\textbf{Topic area co-organizer}: ``Neuromorphic systems for space applications''---\emph{} \\
+%\years{2022}\textbf{Real-time neuromorphics with Norse and AEStream}---\emph{\href{https://jepedersen.dk/slides/202209_neurotech/index.html}{Neurotech Tutorial}} \\
+%\years{2020-2023}\textbf{Conference committee member}---5th, 6th, and 7th Human Brain Project Student Conference on on Interdisciplinary Brain Research.\\
 % \years{2020-2023}\textbf{Student ambassador}---Human Brain Project.\\
-\years{2020-}\textbf{AEStream}---a coroutines-based library for processing event-based data (\href{https://github.com/aestream}{github.com/aestream}) \\
-\years{2018-}\textbf{Norse}---a PyTorch-based deep learning library for spiking neural networks (\href{https://github.com/norse/}{github.com/norse}).
+%\years{2024-}\textbf{Faery}---a library for processing event-based data (\href{https://github.com/aestream}{github.com/aestream}) \\
+%\years{2020-2024}\textbf{AEStream}---a coroutines-based library for processing event-based data (\href{https://github.com/aestream}{github.com/aestream}) \\
+%\years{2018-}\textbf{Norse}---a PyTorch-based deep learning library for spiking neural networks (\href{https://github.com/norse/}{github.com/norse}).
+
+\section*{Technical training}
+
+\textbf{Teaching}: Supervision, Communication, and Teaching. \\
+\textbf{Courseworks}: Advanced machine learning, Deep neural networks, Computational Neuroscience, Advanced Computer vision. \\
+\textbf{Programming}: Python, C++, C, Rust, CUDA, PyTorch, JAX, NumPy, SciPy. \\
+\textbf{Software Engineering}: Git, Docker, Linux, DevOps, CI/CD, Testing, Documentation. \\
 
 \begin{comment}
 \section*{Technical training}
