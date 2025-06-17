@@ -1,8 +1,9 @@
 *.aux
-*.pdf
 *.log
 *.swp
 *.fdb_latexmk
 *.fls
 *.synctex.*
 CV_en.xdv
+*.out
+*.dvi
