@@ -21,6 +21,9 @@
 \geometry{a4paper, textwidth=5.8in, textheight=10in, marginparsep=7pt, marginparwidth=.6in}
 \setlength\parindent{0in}
 
+% GRAPHICS
+\usepackage{graphicx}
+
 % COMMENTS
 \usepackage{verbatim}
 
@@ -50,7 +53,7 @@
 \newcommand{\amper{}}{\chardef\amper="E0BD }
 \newcommand{\years}[1]{\marginnote{\scriptsize #1}}
 \renewcommand*{\raggedleftmarginnote}{}
-\setlength{\marginparsep}{7pt}
+\setlength{\marginparsep}{5pt}
 \reversemarginpar
 
 \usepackage[symbol]{footmisc}
@@ -84,7 +87,7 @@ GitHub: \href{https://github.com/jegp/}{@jegp}\hspace{0.4cm}
 
 
 \section*{Education}
-\years{2019-2025\\{Sep. (est)}}\textbf{PhD in Computer Science}, KTH Royal Institute of Technology, Sweden. \\
+\years{2019-2025}\textbf{PhD in Computer Science}, KTH Royal Institute of Technology, Sweden. \\
 Thesis: \textbf{Neuromorphic computing in space and time}.\\
 Advisors:
 \href{https://www.kth.se/profile/conr}{Jörg Conradt} (KTH) and
@@ -102,7 +105,7 @@ Thesis: Proxy voting in the European Union.
 \years{2025}\href{https://kaw.wallenberg.org/en/calls/wallenberg-foundation-postdoctoral-scholarship-stanford-university-usa}{Wallenberg-Bienenstock Postdoctoral Fellowship Program} at Stanford University, USA.\\
 \years{2025}\href{https://www.mahowaldprize.org/prize-awards/prizes-2025}{Mahowald Early Career Award} for work on the Neuromorphic Intermediate Representation.\\
 \years{2024}\href{https://www.neuropac.info/fellowships/}{NSF AccelNet NeuroPAC Fellowship} at Stanford University, USA.\\
-\years{2022 - 2025}Several compute grants for Swedish National Infrastructure.
+\years{2022 - 2025}Compute grants for 50000+ hours via the \href{https://www.naiss.se/}{Swedish national supercomputing infrastructure}.
 
 \section*{Peer-reviewed publications {\small (* indicates equal authorship)}}
 \years{2025}G. D'Angelo*, \textbf{J. E. Pedersen}*, T. Hassan, M. Cianchetti, J. Bongard, F. Iida, G. Indiveri, M. Hoffmann, C. Laschi, C. D. Luca, C Bartolozzi, E. Donati. ``A Benchmarking Framework for Embodied Neuromorphic Agents''. \textit{In review}. \\
@@ -136,6 +139,7 @@ Thesis: Proxy voting in the European Union.
 \href{https://zenodo.org}{Zenodo}.
 
 \section*{Professional Experience}
+\years{2025-}\textbf{Postdoc}, DTU Electro, Denmark. Supervised by \href{https://noiselab.ucsd.edu/Gerstoft.html}{Peter Gerstoft}. \\
 \years{2025}\textbf{Consultant}, Innatera, The Netherlands.
 Consulting on neuromorphic algorithms and \href{https://neuroir.org}{NIR}. \\
 \years{2018-2025}\textbf{External lecturer}, IT-University of Copenhagen, Denmark.
@@ -154,7 +158,6 @@ I developed and maintained critical monitoring tool-chain and testbed infrastruc
 \years{2024}NIR: A unified instruction set for brain-inspired computing --- \href{https://sites.google.com/view/telluride-2024/}{Telluride Neuromorphic Cognition Engineering Workshop} and \href{http://snufa.net/}{Spiking Neural networks as Universal Function Approximators} \\
 \years{2023}Translation and Scale Invariance for Event-Based Object tracking ---
 \href{https://niceworkshop.org/}{Neuro Inspired Computational Elements Conference (NICE)}. \\
-\years{2023}The need for neuromorphic abstractions ---
 \href{https://open-neuromorphic.org/}{Open Neuromorphic workshop}. \\
 \years{2021}Norse: A library for gradient-based learning in Spiking Neural Networks --- Workshop on \href{http://snufa.net/}{Spiking Neural networks as Universal Function Approximators (SNUFA)}.
 
@@ -167,12 +170,18 @@ Selected projects are listed below. \\
 \years{2022}Merlin Sewina, \emph{Decoding EEG with Spiking and Artificial Neural Networks}, KTH, MSc.\\
 \years{2020}Mikkel Ziemer, \emph{Building CERN's Control System}, CPHBusiness, BSc.
 
+\section*{Teaching experience}
+I designed and taught courses on programming languages (Java, Python, C++), distributed systems, and advanced machine learning during my employments at CPHBusiness, ITU, and KTH.
+Both colleagues and students have consistently evaluated my teaching favorably.
+I have given several tutorials on state-of-the-art research ranging from \href{https://uzh.mediaspace.cast.switch.ch/media/NEUROTECH+TutorialA+Real-time+neuromorphics+with+Norse/0_hynhzm4b/12519}{real-time neuromorphics with spiking neural networks} to a \href{https://www.youtube.com/watch?v=A96rInDg8zo}{hands-on demonstration for the Neuromorphic Intermediate Representation}.
+Currently, I am periodically contributing with education material via the \href{https://www.youtube.com/@hackinghours}{Open Neuromorphic Hacking Hours}.
+
 \vspace{-0.2cm}
 \section*{Community Contributions}
-I am driving development of several widely-used neuromorphic computing libraries (\href{https://github.com/neuromorphs/NIR}{NIR}, \href{https://github.com/norse/}{Norse}, \href{https://github.com/aestream}{AEStream}, \href{https://github.com/aestream/faery}{Faery}) with over 500,000 downloads.
+I drive the development of several widely-used neuromorphic computing libraries (\href{https://github.com/neuromorphs/NIR}{NIR}, \href{https://github.com/norse/}{Norse}, \href{https://github.com/aestream}{AEStream}, \href{https://github.com/aestream/faery}{Faery}) with over 500,000 downloads.
 I review for several neuromorphic venues, including the \href{https://iopscience.iop.org/journal/2634-4386}{Journal of Neuromorphic Computing and Engineering}, the \href{https://niceworkshop.org/}{Neuro Inspired Computational Elements Conference (NICE)}, and the \href{https://iconsneuromorphic.cc/}{International Conference on Neuromorphic Systems (ICONS)}.
 I have organized and led numerous events including at the \href{https://sites.google.com/view/telluride-2024/}{Telluride Neuromorphic Cognition Engineering Workshop} and \href{https://capocaccia.cc/en/}{CapoCaccia Workshop toward Neuromorphic Intelligence}.
-Finally, I am chairing the \emph{\href{https://open-neuromorphic.org/}{Open Neuromorphic Community}}.
+Finally, I chair the \href{https://open-neuromorphic.org/}{Open Neuromorphic Community} with over 2000 members.
 %\years{2024}\textbf{Topic area co-organizer}: ``Neuromorphic systems for space applications''---\emph{} \\
 %\years{2022}\textbf{Real-time neuromorphics with Norse and AEStream}---\emph{\href{https://jepedersen.dk/slides/202209_neurotech/index.html}{Neurotech Tutorial}} \\
 %\years{2020-2023}\textbf{Conference committee member}---5th, 6th, and 7th Human Brain Project Student Conference on on Interdisciplinary Brain Research.\\
@@ -181,55 +190,5 @@ Finally, I am chairing the \emph{\href{https://open-neuromorphic.org/}{Open Neur
 %\years{2020-2024}\textbf{AEStream}---a coroutines-based library for processing event-based data (\href{https://github.com/aestream}{github.com/aestream}) \\
 %\years{2018-}\textbf{Norse}---a PyTorch-based deep learning library for spiking neural networks (\href{https://github.com/norse/}{github.com/norse}).
 % \vspace{-0.2cm}
-\begin{comment}
-\section*{Technical training}
-
-\textbf{Teaching}: Supervision, Communication, and Teaching.\\
-\textbf{Courseworks}: Advanced machine learning, Deep neural networks, Computational % Neuroscience, Advanced Computer vision.\\
-\textbf{Programming}: Python, C++, C, Rust, CUDA, PyTorch, JAX, NumPy, SciPy.\\
-\textbf{Software Engineering}: Git, Docker, Linux, DevOps, NixOS, CI/CD, Testing, Documentation.
-
-\section*{Technical training}
-
-\years{2018}``The Brain Simulation Platform of the Human Brain
-Project'', Human Brain Project summer school  --- \emph{Palermo, Italy}\\
-\years{2018}``Transdisciplinary
-Research Linking Neuroscience, Brain Medicine and Computer Science'', Human Brain Project
-young researchers event ---
-\emph{Ljubljana, Slovenia}\\
-\years{2017}2\textsuperscript{nd} Young Researchers Event, Human Brain Project ---
-\emph{Geneva, Switzerland}\\
-\years{2014}AXEL course on particle accelerator physics --- \emph{CERN, Switzerland}
-
-\section*{Voluntary work}
-\years{2014-2016} Lecturer and tour guide for visitors in and around the CERN complex.
-I was given in-depth introductions to the different parts of the
-control system in the accelerator complex, the cryogenics
-facilities and particle physics. \\
-\years{2008-2015}Co-creator and lead programmer of the collaborative drawing-tool RepoCad, now published as open-source
-(\href{https://github.com/selftiesoftware}{github.com/selftiesoftware}).
-
-\section*{Languages}
-\emph{Danish} (C2, native)\\
-\emph{English} (C2, fully proficient)\\
-\emph{French} (B1, working basic conversational) \\
-\emph{German} (B1, working basic conversational)
-
-\pagebreak
-\section*{References}
-The following professionals kindly offered their availability for personal
-references and questions:
-\begin{enumerate}
-	\item Jesper Mogensen, Professor, Unit for Cognitive Neuroscience, Copenhagen University
-	      \\ Email: \texttt{jesper.mogensen@psy.ku.dk}
-	      \\ Phone: \texttt{(+45) 3532 4873}
-	\item Lars Bogetoft, Head of IT Program, Copenhagen Business Academy (former)
-	      \\ Email: \texttt{lars.bogetoft@gmail.com}
-	      \\ Phone: \texttt{(+45) 5185 0497}
-	\item Kevin Lee, CEO, Mobilized Construction
-	      \\ Email: \texttt{kevin@mobilizedconstruction.com}
-	      \\ Phone: \texttt{(+44) 794 046 3174}
-\end{enumerate}
-\end{comment}
 
 \end{document}
